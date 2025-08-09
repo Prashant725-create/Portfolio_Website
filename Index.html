@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prashant | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <!-- AOS CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+
+<!-- AOS JS (put this at the end of body or in head) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // whether animation should happen only once - while scrolling down
+  });
+</script>
+
+</head>
+<body>
+  <header>
+    <h1>Prashant</h1>
+    <p class="tagline">Aspiring Software Developer | BIT Mesra</p>
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">🌙</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="c:\Users\DELL\Downloads\Prashant_resume (9).pdf" download>Resume</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-wrapper">
+      <img src="c:\Users\DELL\Downloads\Prashant_1.jpg" alt="Prashant" class="profile-pic" />
+      <p>
+        ECE undergrad at BIT Mesra driven by curiosity for data structure and algorithms, Web Developement and machine learning. Skilled in Python, Excel, Pandas, C/C++, HTML, CSS and JavaScript. I enjoy exploring patterns, building models, and turning data into decisions.  <br><br>
+        Currently serving as <strong>Vice President</strong> at the ECE Society, BIT Mesra. Enthusiast in DSA, web development, and machine learning, creating efficient, impactful, and intelligent solutions.
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li><i class="fab fa-python"></i> Python</li>
+      <li><i class="fab fa-c/c++"></i> C/C++</li>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fab fa-css3-alt"></i> CSS</li>
+      <li><i class="fab fa-js-square"></i> JavaScript</li>
+      <li><i class="fas fa-table"></i> Excel</li>
+      <li><i class="fas fa-code"></i> Pandas</li>
+      <li><i class="fas fa-code"></i> NumPy</li>
+      <li><i class="fas fa-chart-bar"></i> Matplotlib</li>
+      
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🎮 TIC TAC TOE - Python</h3>
+        <p>Built a Python-based Tic-Tac-Toe game demonstrating programming skills and control flow logic.</p>
+      </div>
+      <div class="project-card">
+        <h3>Plant Disease Detection</h3>
+        <p>Built a plant disease detection system using a CNN trained in Jupyter Notebook, integrated with a Flask backend and interactive web interface to deliver real-time predictions with treatment recommendations.</p>
+      </div>
+      <div class="project-card">
+        <h3>🌐 Portfolio Website</h3>
+        <p>This site was created using HTML, CSS, and JavaScript to showcase my skills, projects, and professional profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p><strong>Email:</strong> <a href="mailto:prashantgautambeg@gmail.com">prashantgautambeg@gmail.com</a></p>
+    <p><strong>Phone:</strong> +91 8271973689</p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/prashant-gautam-b84532291/" target="_blank">linkedin.com/in/prashant-gautam-b84532291</a></p>
+    <p><strong>GitHub:</strong> <a href="https://github.com/Prashant725-create" target="_blank">github.com/Prashant725-create</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prashant</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      const isDark = document.body.classList.contains('dark-theme');
+      toggleBtn.textContent = isDark ? '☀' : '🌙';
+    });
+  </script>
+</body>
+</html>
